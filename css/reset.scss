@@ -1,0 +1,38 @@
+*,*::before,*::after{
+    box-sizing:border-box;
+    margin:0;
+}
+body{
+    min-height:100vh;
+    display:flex;
+    flex-direction:column;
+    font-family:$ff;
+}
+a{
+    text-decoration:none;
+
+}
+ul{
+    list-style:none;
+    padding-left:0;
+}
+img{
+    max-width:100;
+}
+h1{
+    font-size:$h1;
+}
+
+h2{
+    font-size:$h2;
+}
+
+h3{
+    font-size:$h3;
+}
+
+p{
+    font-family:$body;
+}
+
+

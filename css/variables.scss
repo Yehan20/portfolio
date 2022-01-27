@@ -1,0 +1,18 @@
+$ff: 'Open Sans', sans-serif;
+$bgMain:#750000;
+$btnClr:#31d42f;
+$textClr:#333;
+$textClrSub:#f5f5f5;
+
+//font sizes
+$h1:3rem;
+$h2:2.25rem;
+$h3:1.25rem;
+$body:1rem;
+
+@media (min-width:800px){
+  $h1:4.5rem; 
+  $h2:3.75rem;
+  $h3:1.5rem;
+  $body:1.125rem;
+}
