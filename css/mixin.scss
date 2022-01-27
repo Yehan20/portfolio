@@ -1,0 +1,16 @@
+@mixin btn{
+    display: inline-block;
+    border-radius:0.2em;
+    background:$btnClr;
+    padding:1em;
+    color:#fff;
+    border:0;
+    font-family:'Open Sans', sans-serif;
+    font-weight:800;
+
+}
+@mixin mq($arg){
+    @media(min-width:$arg){
+         @content;
+    }
+}

@@ -67,6 +67,9 @@ p {
   padding: 1.5em 1em;
   display: flex;
   align-items: flex-start;
+  position: fixed;
+  width: 100%;
+  left: 0;
 }
 .header .logo__img {
   display: block;
@@ -78,9 +81,9 @@ p {
   position: fixed;
   left: 0;
   padding: 1em 0;
-  top: 15%;
-  width: 100%;
-  height: 100%;
+  top: 0;
+  bottom: 0;
+  right: 0;
   transform: translateX(-100%);
   transition: transform ease-in 500ms;
 }
@@ -88,11 +91,11 @@ p {
   transform: translateX(0%);
 }
 .header .list {
-  margin-top: 2em;
+  text-align: center;
+  height: 100%;
   display: flex;
   flex-direction: column;
-  align-items: center;
-  text-align: center;
+  justify-content: space-evenly;
 }
 .header .list__item {
   margin-bottom: 1.5em;
@@ -100,10 +103,28 @@ p {
 .header .list__link {
   color: #f5f5f5;
   font-size: 3rem;
+  font-weight: 800;
+  position: relative;
+}
+.header .list__link::after {
+  position: absolute;
+  content: "";
+  left: 0;
+  bottom: -0.3em;
+  height: 3px;
+  width: 70%;
+  background: #fff;
+  border-radius: 0.3em;
+  transform-origin: left;
+  transform: scale(0, 1);
+  transition: transform 200ms ease-in;
+}
+.header .list__link:hover::after {
+  transform: scale(1, 1);
 }
 .header .toggle {
-  position: absolute;
-  z-index: 999;
+  position: fixed;
+  z-index: 9999;
   top: 2em;
   right: 2em;
   padding: 0.6em;
@@ -147,4 +168,61 @@ p {
 }
 .header .open::before {
   transform: rotate(90deg) translateX(-6px);
+}
+@media (min-width: 800px) {
+  .header {
+    display: flex;
+    justify-content: space-between;
+  }
+  .header .nav__bar {
+    all: unset;
+    align-self: center;
+  }
+  .header .toggle {
+    display: none;
+  }
+  .header .list {
+    flex-direction: row;
+    gap: 1em;
+    margin-right: 1em;
+  }
+  .header .list__item {
+    margin-bottom: 0;
+    margin-right: 1em;
+  }
+  .header .list__link {
+    font-size: 1.5rem;
+  }
+}
+
+.btn {
+  display: inline-block;
+  border-radius: 0.2em;
+  background: #267f01;
+  padding: 1em;
+  color: #fff;
+  border: 0;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 800;
+}
+
+.home {
+  padding: 1em;
+  margin: 2em 0;
+  color: #333;
+}
+.home .btn__lg {
+  font-size: 2.25rem;
+  transition: transform 250ms ease-in-out;
+}
+.home .btn__lg:hover {
+  transform: scale(1.05);
+}
+.home .button__container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+.home .title__text {
+  margin-top: 2em;
 }/*# sourceMappingURL=style.css.map */
