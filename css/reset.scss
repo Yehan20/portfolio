@@ -20,19 +20,41 @@ img{
     max-width:100;
 }
 h1{
-    font-size:$h1;
+    font-size:3rem;
 }
 
 h2{
-    font-size:$h2;
+    font-size:2.25rem;
 }
 
 h3{
-    font-size:$h3;
+    font-size:1.25rem;
 }
 
 p{
-    font-family:$body;
+    font-family:1rem;
 }
 
+@media (min-width:800px){
+    h1{
+        font-size:4.5rem;
+    }
+    
+    h2{
+        font-size:3.75rem;
+    }
+    
+    h3{
+        font-size:1.5rem;
+    }
+    
+    p{
+        font-family:1.125rem;
+    }
 
+}
+  .container{
+    max-width:1200px;
+    width:90%;
+    margin:0 auto;
+}
