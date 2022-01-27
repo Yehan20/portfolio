@@ -1,12 +1,14 @@
 @mixin btn{
     display: inline-block;
     border-radius:0.5em;
-    background:$btnClr;
-    padding:1em;
-    color:#fff;
+    background:$bgSub;
+    padding:0.75em 1em;
+    color:#000;
     border:0;
     font-family:'Open Sans', sans-serif;
     font-weight:800;
+    min-width: 100px;
+    
 
 }
 @mixin mq($arg){

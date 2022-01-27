@@ -160,6 +160,12 @@
 
 .btn{
     @include btn;
+    text-align:center;
+    &:hover{
+        transform:scale(1.05);
+    }
+    transition:transform 350ms ease-in-out;
+   
 }
 
 // home styling
@@ -170,10 +176,8 @@
     color:$textClr;
     .btn__lg{
         font-size:clamp(1rem,1.5vw,1.5rem);
-        transition:transform 250ms ease-in-out;
-        &:hover{
-            transform:scale(1.05);
-        }
+        transition:transform 350ms ease-in-out;
+       
     }
     .button__container{
         margin-top:1em;
@@ -245,6 +249,72 @@
      }
 }
 
-.work{
-    background:$textClrSub;
+//work css here
+.projects{
+    margin:3em 0;
+    .works{
+        margin-top:1em;
+    }
+    .work{
+        padding:1em;
+        background:$textClrSub;
+        border-radius:0.3em;
+        display:flex;
+        flex-direction:column;
+        margin-bottom:1em;
+    }
+    .one>*{
+        margin-bottom:1em;
+    }
+    li{
+        margin-bottom:0.3em;
+        @include btn;
+        // background:$bgMain;
+        color:$textClr;
+        max-width:130px;
+        background:#f4f4f4;
+        width:100%;
+        border-radius:0;
+    }
+    .button__container{
+        display:flex;
+        justify-content:center;
+        flex-wrap:wrap;
+        gap:1em;
+    }
+    .work__para{
+        line-height: 1.7;
+    }
+
+    @include mq(900px){
+        .title__text{
+            text-align:center;
+        }
+        .works{
+            display:grid;
+            grid-template-columns:repeat(auto-fit,minmax(550px,1fr));
+            gap:1em;
+        }
+        .work{
+           flex-direction:row;
+          
+        }
+        .one,.two{
+            flex-basis:100%;
+        }
+        .one{
+            align-self:flex-start;
+        }
+     
+        
+        .technologies{
+         display:flex;
+         flex-wrap:wrap;
+         gap:.3em;
+         margin-bottom:1em;
+        }
+    }
+
+    
 }
+
