@@ -256,7 +256,7 @@
         margin-top:1em;
     }
     .work{
-        padding:1em;
+        padding:1em 1em 0.4em 1em;
         background:$textClrSub;
         border-radius:0.3em;
         display:flex;
@@ -272,7 +272,7 @@
         // background:$bgMain;
         color:$textClr;
         max-width:130px;
-        background:#f4f4f4;
+        background:#ffff;
         width:100%;
         border-radius:0;
     }
@@ -284,8 +284,13 @@
     }
     .work__para{
         line-height: 1.7;
+        margin-top:2em;
+     
     }
-
+    .work__img{
+        display:block;
+        margin: 0 auto;
+    }
     @include mq(900px){
         .title__text{
             text-align:center;
@@ -297,11 +302,18 @@
         }
         .work{
            flex-direction:row;
+        
           
         }
         .one,.two{
             flex-basis:100%;
+
         }
+
+        .work__para{
+            max-width: 250px;
+        }
+        
         .one{
             align-self:flex-start;
         }
@@ -316,5 +328,41 @@
     }
 
     
+}
+
+//skill css here
+.skills{
+    margin:2em 0;
+    .skills__box{
+        margin-top:1em;
+        display:flex;
+        flex-wrap:wrap;
+        gap:1em;
+        align-items:center;
+        justify-content: center;
+    }
+    .skill{
+        // min-width:200px;
+        max-width:250px;
+        text-align:center;
+
+        padding:1em;
+        // background:#f5f5f5;
+        // margin-bottom:1em;
+        border-radius:0.5em;
+        box-shadow:$boxShadow;
+        cursor: pointer;
+        transition:transform 300ms ease-in ;
+        &:hover{
+            transform:translateY(5px);
+        }
+    }
+    
+    .skill__img{
+        // background-color:red;
+        // width:100%;
+        min-width: 150px;
+        height:75px;
+    }
 }
 

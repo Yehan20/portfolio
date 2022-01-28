@@ -296,7 +296,7 @@ p {
   margin-top: 1em;
 }
 .projects .work {
-  padding: 1em;
+  padding: 1em 1em 0.4em 1em;
   background: #f5f5f5;
   border-radius: 0.3em;
   display: flex;
@@ -319,7 +319,7 @@ p {
   min-width: 100px;
   color: #333;
   max-width: 130px;
-  background: #f4f4f4;
+  background: #ffff;
   width: 100%;
   border-radius: 0;
 }
@@ -331,6 +331,11 @@ p {
 }
 .projects .work__para {
   line-height: 1.7;
+  margin-top: 2em;
+}
+.projects .work__img {
+  display: block;
+  margin: 0 auto;
 }
 @media (min-width: 900px) {
   .projects .title__text {
@@ -347,6 +352,9 @@ p {
   .projects .one, .projects .two {
     flex-basis: 100%;
   }
+  .projects .work__para {
+    max-width: 250px;
+  }
   .projects .one {
     align-self: flex-start;
   }
@@ -356,4 +364,32 @@ p {
     gap: 0.3em;
     margin-bottom: 1em;
   }
+}
+
+.skills {
+  margin: 2em 0;
+}
+.skills .skills__box {
+  margin-top: 1em;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1em;
+  align-items: center;
+  justify-content: center;
+}
+.skills .skill {
+  max-width: 250px;
+  text-align: center;
+  padding: 1em;
+  border-radius: 0.5em;
+  box-shadow: 0.25em 0.25em 0.75em rgba(0, 0, 0, 0.25), 0.125em 0.125em 0.25em rgba(0, 0, 0, 0.15);
+  cursor: pointer;
+  transition: transform 300ms ease-in;
+}
+.skills .skill:hover {
+  transform: translateY(5px);
+}
+.skills .skill__img {
+  min-width: 150px;
+  height: 75px;
 }/*# sourceMappingURL=style.css.map */
