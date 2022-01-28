@@ -67,6 +67,22 @@ p {
   margin: 0 auto;
 }
 
+.title__text {
+  text-align: center;
+}
+
+::-moz-placeholder {
+  font-family: "Open Sans", sans-serif;
+}
+
+:-ms-input-placeholder {
+  font-family: "Open Sans", sans-serif;
+}
+
+::placeholder {
+  font-family: "Open Sans", sans-serif;
+}
+
 .header {
   background: #750000;
   padding: 1.5em 1em;
@@ -75,6 +91,7 @@ p {
   position: fixed;
   width: 100%;
   left: 0;
+  z-index: 99;
 }
 .header .logo__img {
   display: block;
@@ -202,7 +219,7 @@ p {
 
 .btn {
   display: inline-block;
-  border-radius: 0.5em;
+  border-radius: 0.6em;
   background: #f9b053;
   padding: 0.75em 1em;
   color: #000;
@@ -237,6 +254,7 @@ p {
 }
 .home .title__text {
   margin: 2em 0 0.2em 0;
+  text-align: start;
 }
 
 .about {
@@ -298,7 +316,7 @@ p {
 .projects .work {
   padding: 1em 1em 0.4em 1em;
   background: #f5f5f5;
-  border-radius: 0.3em;
+  border-radius: 0.5em;
   display: flex;
   flex-direction: column;
   margin-bottom: 1em;
@@ -309,7 +327,7 @@ p {
 .projects li {
   margin-bottom: 0.3em;
   display: inline-block;
-  border-radius: 0.5em;
+  border-radius: 0.6em;
   background: #f9b053;
   padding: 0.75em 1em;
   color: #000;
@@ -321,7 +339,8 @@ p {
   max-width: 130px;
   background: #ffff;
   width: 100%;
-  border-radius: 0;
+  margin: 1em;
+  border-radius: 0.2em;
 }
 .projects .button__container {
   display: flex;
@@ -331,7 +350,8 @@ p {
 }
 .projects .work__para {
   line-height: 1.7;
-  margin-top: 2em;
+  margin-top: 1.5em;
+  margin-bottom: 0.5em;
 }
 .projects .work__img {
   display: block;
@@ -343,8 +363,8 @@ p {
   }
   .projects .works {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(550px, 1fr));
-    gap: 1em;
+    grid-template-columns: repeat(auto-fit, minmax(575px, 1fr));
+    gap: 1.3em;
   }
   .projects .work {
     flex-direction: row;
@@ -352,17 +372,24 @@ p {
   .projects .one, .projects .two {
     flex-basis: 100%;
   }
-  .projects .work__para {
-    max-width: 250px;
-  }
   .projects .one {
     align-self: flex-start;
+  }
+  .projects .work__para {
+    max-width: 290px;
+    line-height: 1.7;
+    height: 190px;
+    margin-right: 0.5em;
   }
   .projects .technologies {
     display: flex;
     flex-wrap: wrap;
-    gap: 0.3em;
+    gap: 0.8em;
     margin-bottom: 1em;
+    margin-top: auto;
+  }
+  .projects li {
+    margin: 0;
   }
 }
 
@@ -370,16 +397,17 @@ p {
   margin: 2em 0;
 }
 .skills .skills__box {
-  margin-top: 1em;
+  margin-top: 1.5em;
   display: flex;
   flex-wrap: wrap;
-  gap: 1em;
+  gap: 1.5em;
   align-items: center;
   justify-content: center;
 }
 .skills .skill {
-  max-width: 250px;
+  max-width: 150px;
   text-align: center;
+  font-weight: 600;
   padding: 1em;
   border-radius: 0.5em;
   box-shadow: 0.25em 0.25em 0.75em rgba(0, 0, 0, 0.25), 0.125em 0.125em 0.25em rgba(0, 0, 0, 0.15);
@@ -390,6 +418,63 @@ p {
   transform: translateY(5px);
 }
 .skills .skill__img {
-  min-width: 150px;
+  min-width: 100px;
   height: 75px;
+}
+
+.contact {
+  margin: 2em 0;
+}
+.contact .contact__form {
+  margin: 1em auto;
+  display: flex;
+  flex-direction: column;
+  width: min(80%, 650px);
+}
+.contact .contact__form div {
+  margin-bottom: 1em;
+}
+.contact .contact__form input, .contact .contact__form label {
+  display: block;
+  font-size: 1.1rem;
+}
+.contact .contact__form input, .contact .contact__form textarea {
+  width: 100%;
+  border-radius: 0.3em;
+  border: 0;
+  padding: 0.75em;
+  margin: 0.5em 0 1em 0;
+  font-size: 1.1rem;
+  font-family: "Open Sans", sans-serif;
+  background: #f5f5f5;
+  outline: 2px solid rgba(117, 0, 0, 0);
+  transition: all 350ms ease-in;
+}
+.contact .contact__form input:focus, .contact .contact__form textarea:focus {
+  outline: 2px solid #750000;
+}
+.contact .contact__form .btn__send {
+  align-self: center;
+  font-size: 1.2rem;
+  cursor: pointer;
+  background: #f9b053;
+}
+.contact .contact__form .social__media {
+  margin-top: 1.6em;
+  display: flex;
+  justify-content: center;
+  gap: 1em;
+}
+.contact .contact__form i {
+  color: #333;
+}
+.contact .contact__form a {
+  font-size: 2rem;
+}
+
+.footer {
+  margin-top: auto;
+  background: #750000;
+  padding: 4em 1em;
+  color: #f5f5f5;
 }/*# sourceMappingURL=style.css.map */
