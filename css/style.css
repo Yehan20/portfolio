@@ -257,11 +257,12 @@ p {
 .home .intro__para {
   font-size: 1.25rem;
   margin-bottom: 2.5em;
+  line-height: 1.7;
 }
 .home .title__text {
   margin: 2em 0 0.2em 0;
   text-align: start;
-  max-width: 600px;
+  max-width: 650px;
 }
 
 .about {
