@@ -2,6 +2,8 @@
 @import 'reset';
 @import 'mixin';
 
+
+
 .header{
     background:$bgMain;
     padding:1.5em 1em;
@@ -11,6 +13,7 @@
     width:100%;
     left:0;
     z-index:99;
+    transition:all 250ms ease-in;
    
     .logo__img{
         display:block;
@@ -68,6 +71,8 @@
             transform:scale(1,1);
         }
     }
+   
+    
 
     .toggle{
         position:fixed;
@@ -99,8 +104,9 @@
             width:2em;
             height:3px;
             border-radius:0.4em;
-            background:$textClrSub;
+            // background:$textClrSub;
             // transition:all ease-in 500ms;
+            background: inherit;
             
         
         }
@@ -155,6 +161,9 @@
         .list__link{
             font-size: $body + 0.5rem;
         }
+        .dark{
+            color:#222;
+        }
     }
     
 }
@@ -176,22 +185,26 @@
     padding-bottom:5.5em;
     color:$textClr;
     .btn__lg{
-        font-size:clamp(1rem,1.5vw,1.5rem);
+        font-size:clamp(1rem,1.7vw,2rem);
         transition:transform 350ms ease-in-out;
+        margin-bottom:1em;
        
     }
     .button__container{
-        margin-top:1em;
+        margin-top:1.5em;
         display:flex;
         flex-wrap:wrap;
         gap:20px;
     }
     .intro__para{
         font-size:$h3;
+        margin-bottom:2.5em;
+        
     }
     .title__text{
         margin:2em 0 0.2em 0;
         text-align:start;
+        max-width:600px;
     }
     
   
@@ -200,21 +213,24 @@
 
 .about{
      margin:5em 0 0 0;
-
+     overflow: hidden;
      .about__section>*{
          margin-top:1em;
+         line-height:1.7;
      }
      .about__section__title{
          background:$bgMain;
          padding:0.5em 1em;
          color:$textClrSub;
          border-radius:0.2em;
+   
      }
      .profile__img{
         box-shadow:$boxShadow;
         border-radius:0.2em;
         width:min-content;
      }
+
      @include mq(650px){
         .title__text{
             text-align:center;
@@ -239,18 +255,44 @@
         }
         .about__section__para{
             grid-area: para;
-            // grid-row:1;
             max-width:700px;
-            line-height:1.7;
+         
+       
+
+            
         }
         .profile__img{
             grid-area:img;
             min-width:200px;
+
          
         }
      }
 }
+.left{
+    animation: move 750ms ease-in-out backwards;
+}
+.right{
+    animation: movepic 750ms ease-in-out;
+}
 
+@keyframes move{
+    0%{
+      transform:translateX(-180%);
+    }
+    100%{
+      transform: translateX(0);
+    }
+}
+
+@keyframes movepic{
+    0%{
+      transform:translateX(200%);
+    }
+    100%{
+      transform: translateX(0);
+    }
+}
 //work css here
 .projects{
     margin:3em 0;
@@ -258,12 +300,14 @@
         margin-top:1em;
     }
     .work{
-        padding:1em 1em 0.4em 1em;
+        padding:1em 1em 1em 1em;
         background:$textClrSub;
         border-radius:0.5em;
         display:flex;
         flex-direction:column;
-        margin-bottom:1em;
+        margin-bottom:1.5em;
+  
+        transform-origin:center;
     }
     .one>*{
         margin-bottom:1em;
@@ -289,7 +333,7 @@
     .work__para{
         line-height: 1.7;
         margin-top:1.5em;
-        margin-bottom:0.5em;
+        margin-bottom:1em;
        
 
     }
@@ -305,6 +349,7 @@
             display:grid;
             grid-template-columns:repeat(auto-fit,minmax(575px,1fr));
             gap:1.3em;
+            
         }
         .work{
            flex-direction:row;
@@ -347,7 +392,18 @@
 
     
 }
-
+.grows{
+    animation:grow 750ms ease-out;
+}
+@keyframes grow{
+    0%{
+        transform:scale(0.1,0.1);
+    }
+     100%{
+         transform:scale(1,1);
+     }
+     
+}
 //skill css here
 .skills{
     margin:2em 0;

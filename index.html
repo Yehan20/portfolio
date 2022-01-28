@@ -12,9 +12,9 @@
     <link rel="stylesheet" type="text/css" href="css/style.css">
 </head>
 <body>
-    <header class="header">
+    <header class="header" id="header">
         <div class="logo">
-            <img src="images/logo.jpg" class="logo__img" alt="Logo image">
+           <a href="#home"><img src="images/logo.jpg" class="logo__img" alt="Logo image"></a> 
         </div>
         <button class="toggle">
             
@@ -22,10 +22,10 @@
         </button>
         <nav class="nav__bar">
             <ul class="list">
-                <li class="list__item"><a href="" class="list__link">Home</a></li>
-                <li class="list__item"><a href="" class="list__link">About me</a></li>
-                <li class="list__item"><a href="" class="list__link">Projects</a></li>
-                <li class="list__item"><a href="" class="list__link">Contact</a></li>
+                <li class="list__item"><a href="#about" class="list__link">About me</a></li>
+                <li class="list__item"><a href="#projects" class="list__link">Works</a></li>
+                <li class="list__item"><a href="#skills" class="list__link">Skills</a></li>
+                <li class="list__item"><a href="#contact" class="list__link">Contact</a></li>
             </ul>
        
         </nav>
@@ -36,8 +36,8 @@
     <!-- home section start -->
     <section class="home" id="home">
         <div class="container">
-            <h1 class="title__text">
-                Hello I am Yehan,<br>              
+            <h1 class="title__text" >
+                <span id="type"></span><br>              
             </h1>
             <p class="intro__para">
                 A web developer that is addicted to making responsive websites
@@ -55,14 +55,14 @@
             <h2 class="title__text">About me</h2>
             <div class="about__section">
                 <h3 class="about__section__title">I am a Front end developer </h3>
-                <p class="about__section__para">
+                <p class="about__section__para" id="aboutPara">
                    Hello I am Yehan Nilanga, I am final year CSE student, My love for web development started 7 months ago. Since then I have been self studing about different technologies and making websites using those concepts , I feel really happy when desigining responsive and attractive websites, I like to write clean and reusable code that can be understood by others, my prefered area is front end but I have a resonable knowledge about backend as well.<br><br>
 
                    As a person i am a friendly easy going guy who likes to make new friends , and help others, I try to be positive and learn from my mistakes, when i am free I like to make small web based games and listen to music.
                     <br><br>
                     Currently I am looking for an Internship or a Traninee job to get some industrial experience and work with other experienced Developer and get useful advice, I hope to give my 100% when working and continue to grow myself as a developer.
                 </p>
-                <img src='images/me-1.jpg' class="profile__img" alt='Image of me'>
+                <img src='images/me-1.jpg' class="profile__img" id="profile" alt='Image of me'>
             </div>
         </div>  
     </section>
@@ -319,6 +319,61 @@
             <h3 class="title__text">© 2021. Designed and developed by Yehan .</h3>
         </div>
     </footer>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.11/typed.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <script src='js/app.js'></script>
+    <script>
+     $(document).ready(function(){
+          // Add smooth scrolling to all links
+          $("a").on('click', function(event) {
+        
+            // Make sure this.hash has a value before overriding default behavior
+            if (this.hash !== "") {
+              // Prevent default anchor click behavior
+              event.preventDefault();
+        
+              // Store hash
+              var hash = this.hash;
+        
+              // Using jQuery's animate() method to add smooth page scroll
+              // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
+              $('html, body').animate({
+                scrollTop: $(hash).offset().top
+              }, 800, function(){
+        
+                // Add hash (#) to URL when done scrolling (default click behavior)
+                window.location.hash = hash;
+              });
+            } // End if
+          });
+
+          if ($("#type").length == 1) {
+              
+              var typed_strings ="Hello I am Yehan , I am  a Front end Developer, Welcome to My Portfolio"
+    
+              var typed = new Typed("#type", {
+                  strings:typed_strings.split(', '),
+                  typeSpeed: 200,
+                  loop: true,
+                  loopCount:false,
+                  backDelay: 900,
+                  backSpeed: 30,
+                  cursorChar: ' ',
+                  callback: function() {},
+                    // starting callback function before each string
+                  preStringTyped: function() {},
+                    //callback for every typed string
+                  onStringTyped: function() {},
+                    // callback for reset
+                  resetCallback: function() {}
+               
+              });
+          }
+
+        });
+
+
+
+    </script>
 </body>
 </html>
