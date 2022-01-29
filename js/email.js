@@ -27,7 +27,7 @@ form.addEventListener('submit',(e)=>{
     
     if(email.value===''){
         e.preventDefault();
-        errors[3].textContent='Required';
+        errors[1].textContent='Required';
         console.log('works');
         isValid=false;
 
@@ -35,7 +35,7 @@ form.addEventListener('submit',(e)=>{
     }
     else if(!re.test(email.value)){
         e.preventDefault();
-        errors[3].textContent='Enter valid email Format';
+        errors[1].textContent='Enter valid email Format';
         isValid=false;
     }
 

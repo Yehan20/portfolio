@@ -3,8 +3,26 @@
     margin:0;
 }
 html{
-    scroll-behavior: smooth;
+    scroll-behavior: auto;
 }
+::-webkit-scrollbar {
+    width: 15px;
+   
+  }
+  
+  ::-webkit-scrollbar-track {
+    background: #f5f5f5;
+  }
+  
+  ::-webkit-scrollbar-thumb {
+    background: #750000;
+    border-radius:0.5em;
+  }
+  
+  ::-webkit-scrollbar-thumb:hover {
+    background: #555;
+ }
+
 body{
     min-height:100vh;
     display:flex;

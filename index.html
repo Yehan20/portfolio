@@ -9,6 +9,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+    <link rel="icon"  type="favicon" href="icons/logo-icon.png">
     <link rel="stylesheet" type="text/css" href="css/style.css">
 </head>
 <body>
@@ -32,6 +33,13 @@
         
        
     </header>
+    
+    <div class="spinner">
+        <div class="loader">
+            <img src="images/logo.jpg"  class="logo__img" alt="">
+        </div>
+    </div>
+
 
     <!-- home section start -->
     <section class="home" id="home">
@@ -298,7 +306,7 @@
 
                 <div>
                     <label for="#email">Email</label>
-                    <input type="email" name="name" id="email" placeholder="Email"  />
+                    <input type="email" name="email" id="email" placeholder="Email"  />
                     <div class="err"></div>
                 </div>
                 <input type="hidden" name="_next" value="http://127.0.0.1:5500/pages/success.html">
@@ -313,9 +321,9 @@
                 </div>
                 <button type="submit" class="btn btn__send">Send Message</button>
                 <ul class="social__media">
-                    <li><a href="#"><i class="fa fa-envelope"></i></a></li>
-                    <li><a href="#"><i class="fab fa-github"></i></a></li>
-                    <li><a href="#"><i class="fab fa-linkedin"></i></a></li>
+                    <li><a href="mailto:yehansk15@gmail.com" target="_blank"><i class="fa fa-envelope"></i></a></li>
+                    <li><a href="https://github.com/Yehan20" target="_blank"><i class="fab fa-github"></i></a></li>
+                    <li><a href="https://www.linkedin.com/in/yehan-nilanga-552b87161/" target="_blank"><i class="fab fa-linkedin"></i></a></li>
                 </ul>
             </form>
         </div>
@@ -349,14 +357,11 @@
               // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
               $('html, body').animate({
                 scrollTop: $(hash).offset().top
-              }, 500, function(){
+              }, 400, function(){
         
                 // Add hash (#) to URL when done scrolling (default click behavior)
                 window.location.hash = hash;
-                window.addEventListener("hashchange", function () {
-                setTimeout( ()=>{window.scrollTo(window.scrollX, window.scrollY - 50 )},400)
-       
-               });
+             
         
               });
             } // End if
