@@ -59,4 +59,3 @@ function clear(){
         erro.textContent='';
     })
 }
-console.log('gg');

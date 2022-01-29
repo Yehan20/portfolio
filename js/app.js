@@ -12,13 +12,14 @@ aboutSection = document.querySelector('#abt').offsetTop - 100;
 contact = document.querySelector('#contact').offsetTop - 200;
 skills = document.querySelector('#skills').offsetTop - 300 ;
 projects = document.querySelector('#projects').offsetTop -230;
+
 window.addEventListener('resize',()=>{
 
          aboutSection = document.querySelector('#abt').offsetTop -100 ;
          contact = document.querySelector('#contact').offsetTop -200;
          skills = document.querySelector('#skills').offsetTop - 300;
          projects = document.querySelector('#projects').offsetTop - 230 ;
-         console.log('resized');
+
 })
 
 window.addEventListener("hashchange", function () {
@@ -30,6 +31,7 @@ window.addEventListener("hashchange", function () {
 setTimeout(()=>{
     spinner.style.display='none';
 },1000)
+
 
 toggleBtn.addEventListener('click',()=>{
         nav__items.forEach(nav=>{
@@ -170,7 +172,7 @@ function basicScrolls(){
 
    // scorlling
       window.addEventListener('scroll',(e)=>{
-        console.log('SRCOLLy',scrollY);  
+       
 
    
         if(scrollY>25 ){
@@ -204,7 +206,7 @@ function basicScrolls(){
         if(scrollY>520){
                 let time=500;
            
-                console.log(val);
+             
                 if(val){
                   loopWorks(time);
                 }
@@ -214,7 +216,7 @@ function basicScrolls(){
 
         }
         
-        //scrolling effects
+        //scrolling effects for the link underline
 
         let distance=[aboutSection ,projects,skills,contact] // array of nav distances
         let linkArray=[getLink(0),getLink(1),getLink(2),getLink(3)] // array of links
@@ -229,19 +231,19 @@ function basicScrolls(){
         if(scrollY>distance[1]){
             
                 linkArray[1].style.setProperty('--number2',1)
-                console.log('this works');
+                //console.log('this works');
                 removeSelected(1);
         }
         if(scrollY>distance[2]){
 
                 linkArray[2].style.setProperty('--number2',1)
-                console.log('this works');
+                //console.log('this works');
                 removeSelected(2);
         }
         if(scrollY>distance[3]){
 
                 linkArray[3].style.setProperty('--number2',1)
-                console.log('this works')
+                // console.log('this works')
                 removeSelected(3);
         }
 
