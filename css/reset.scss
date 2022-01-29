@@ -2,6 +2,9 @@
     box-sizing:border-box;
     margin:0;
 }
+html{
+    scroll-behavior: smooth;
+}
 body{
     min-height:100vh;
     display:flex;
@@ -33,6 +36,8 @@ h3{
 section{
     color:$textClr;
     padding:1em;
+    position: relative;
+
 }
 p{
     font-family:1rem;
@@ -56,6 +61,7 @@ p{
     }
 
 }
+
   .container{
     max-width:1200px;
     width:90%;
@@ -67,4 +73,9 @@ p{
 ::placeholder{
     font-family:$ff;
     
+}
+.err{
+    color:red;
+    font-size:$body;
+    font-weight:500;
 }

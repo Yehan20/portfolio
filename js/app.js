@@ -7,6 +7,8 @@ const about  =document.querySelector('#aboutPara');
 const works = document.querySelectorAll('.work');
 
 
+
+
 toggleBtn.addEventListener('click',()=>{
         nav__items.forEach(nav=>{
                 nav.classList.toggle('dark');
@@ -16,6 +18,13 @@ toggleBtn.addEventListener('click',()=>{
         
    
     
+})
+
+nav__items.forEach(link=>{
+        link.addEventListener('click',()=>{
+                hamBurgermenu.classList.toggle('open')
+                navBar.classList.toggle('slide');
+        })
 })
 
 // js scroll color change effect
@@ -100,6 +109,8 @@ function basicScrolls(){
                         nav.classList.remove('dark');
                 })
                 hamBurgermenu.style.background='#f5f5f5'
+                header.style.padding='0.75em';
+               
 
         }
         else{
@@ -108,6 +119,8 @@ function basicScrolls(){
                         nav.classList.add('dark');
                 }) 
                 hamBurgermenu.style.background='#333'
+                header.style.padding='1em';
+        
         }
 
         if(scrollY>260){

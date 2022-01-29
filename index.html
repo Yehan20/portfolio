@@ -22,7 +22,7 @@
         </button>
         <nav class="nav__bar">
             <ul class="list">
-                <li class="list__item"><a href="#about" class="list__link">About me</a></li>
+                <li class="list__item"><a href="#abt" class="list__link">About me</a></li>
                 <li class="list__item"><a href="#projects" class="list__link">Works</a></li>
                 <li class="list__item"><a href="#skills" class="list__link">Skills</a></li>
                 <li class="list__item"><a href="#contact" class="list__link">Contact</a></li>
@@ -50,7 +50,7 @@
     </section>
 
     <!-- about section -->
-    <section class="about" id="about">
+    <section class="about" id="abt">
         <div class="container">
             <h2 class="title__text">About me</h2>
             <div class="about__section">
@@ -289,22 +289,29 @@
     <section class="contact" id="contact">
         <div class="container">
             <h2 class="title__text">Contact</h2>
-            <form action="#" class="contact__form">
+            <form action="https://formsubmit.co/0c0e16f51e8eeeca15664798b03982be" method="POST" class="contact__form">
                 <div>
                     <label for="#name">Name</label>
                     <input type="text" name="name" id="name" placeholder="Your Name" />
+                    <div class="err"></div>
                 </div>
 
                 <div>
-                    <label for="#email">Emial</label>
-                    <input type="email" name="name" id="name" placeholder="Email" />
+                    <label for="#email">Email</label>
+                    <input type="email" name="name" id="email" placeholder="Email"  />
+                    <div class="err"></div>
                 </div>
+                <input type="hidden" name="_next" value="http://127.0.0.1:5500/pages/success.html">
+                <input type="hidden" name="_template" value="basic">
+                <input type="hidden" name="_captcha" value="false">
+                <input type="hidden" name="_subject" value="new Email" id="">
 
                 <div>
                     <label for="#message">Message</label>
                     <textarea name="message" id="message" style="resize: none;" placeholder="location" cols="30" rows="5"></textarea>
+                    <div class="err"></div>
                 </div>
-                <button class="btn btn__send">Send Message</button>
+                <button type="submit" class="btn btn__send">Send Message</button>
                 <ul class="social__media">
                     <li><a href="#"><i class="fa fa-envelope"></i></a></li>
                     <li><a href="#"><i class="fab fa-github"></i></a></li>
@@ -322,11 +329,14 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.11/typed.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <script src='js/app.js'></script>
+    <script src="js/email.js"></script>
     <script>
      $(document).ready(function(){
-          // Add smooth scrolling to all links
+          //Add smooth scrolling to all links
+
           $("a").on('click', function(event) {
-        
+
+
             // Make sure this.hash has a value before overriding default behavior
             if (this.hash !== "") {
               // Prevent default anchor click behavior
@@ -339,10 +349,15 @@
               // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
               $('html, body').animate({
                 scrollTop: $(hash).offset().top
-              }, 800, function(){
+              }, 500, function(){
         
                 // Add hash (#) to URL when done scrolling (default click behavior)
                 window.location.hash = hash;
+                window.addEventListener("hashchange", function () {
+                setTimeout( ()=>{window.scrollTo(window.scrollX, window.scrollY - 50 )},400)
+       
+               });
+        
               });
             } // End if
           });
