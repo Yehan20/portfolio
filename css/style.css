@@ -111,6 +111,12 @@ p {
   font-weight: 500;
 }
 
+@media (min-width: 1600px) {
+  .container {
+    max-width: 100%;
+  }
+}
+
 .header {
   background: #750000;
   padding: 1.5em 1em;
@@ -221,7 +227,7 @@ p {
   opacity: 0;
 }
 .header .open::before {
-  transform: rotate(90deg) translateX(-6px);
+  transform: rotate(90deg), translateX(-6px);
 }
 @media (min-width: 800px) {
   .header {
@@ -308,7 +314,7 @@ p {
   color: #333;
 }
 .home .btn__lg {
-  font-size: clamp(1rem,1.7vw,2rem);
+  font-size: clamp(1rem, 1.7vw, 2rem);
   transition: transform 350ms ease-in-out;
   margin-bottom: 1em;
 }
@@ -327,7 +333,7 @@ p {
   margin: 2em 0 0.4em 0;
   text-align: start;
   max-width: 650px;
-  font-size: clamp(2.2rem, 3vw,3rem);
+  font-size: clamp(2.2rem, 3vw, 3rem);
 }
 
 .about {
@@ -455,7 +461,7 @@ p {
   min-width: 100px;
   color: #333;
   max-width: 130px;
-  background: #ffff;
+  background: white;
   width: 100%;
   margin: 1em;
   border-radius: 0.2em;
