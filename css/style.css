@@ -227,7 +227,7 @@ p {
   opacity: 0;
 }
 .header .open::before {
-  transform: rotate(90deg), translateX(-6px);
+  transform: translate(-1px, -6px) rotate(90deg);
 }
 @media (min-width: 800px) {
   .header {
