@@ -336,6 +336,16 @@ p {
   font-size: clamp(2.2rem, 3vw, 3rem);
 }
 
+@media screen and (max-width: 767px) {
+  .home {
+    padding-bottom: 0;
+    margin-bottom: 0em;
+  }
+
+  .about {
+    margin-top: 1em;
+  }
+}
 .about {
   margin: 5em 0 1em 0;
   overflow: hidden;

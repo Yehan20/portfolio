@@ -209,11 +209,14 @@
     100% { transform: rotate(360deg); }
   }
 // home styling
+
+
 .home{
 
     margin:2em 0 5em 0;
     padding-bottom:7em;
     color:$textClr;
+
     .btn__lg{
         font-size:clamp(1rem,1.7vw,2rem);
         transition:transform 350ms ease-in-out;
@@ -241,6 +244,18 @@
     }
     
   
+ 
+}
+
+@media screen and (max-width:767px) {
+    .home{
+         padding-bottom: 0;
+         margin-bottom:0em;
+
+     }
+     .about{
+         margin-top:1em;
+     }
  
 }
 

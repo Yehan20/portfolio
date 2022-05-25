@@ -64,7 +64,7 @@ nav__items.forEach((link,index)=>{
                 def();
                 hamBurgermenu.classList.toggle('open')
                 navBar.classList.toggle('slide');
-                console.log(link);
+           
                
                 if(link.classList.contains('click')){
                         link.style.setProperty('--number2',0);
