@@ -1,0 +1,834 @@
+/*
+font-family: 'Nunito Sans', sans-serif;
+font-family: 'Oswald', sans-serif;
+font-family: 'Poppins', sans-serif;
+font-family: 'Rajdhani', sans-serif;
+*/
+@import url("https://use.fontawesome.com/releases/v5.13.0/css/all.css");
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    min-height: 100vh;
+}
+
+/*-----------------------------------Header CSS here----------------------------- */
+header {
+    padding: 8px 0;
+}
+
+.img-container {
+    display: flex;
+
+}
+.back_to_top.show {
+    opacity: 1;
+    bottom: 30px;
+    opacity:0.6;
+}
+
+.back_to_top.show:hover {
+    opacity: 1;
+}
+
+.back_to_top {
+    position: fixed;
+    right: 10px;
+    bottom: 0;
+    z-index: 100;
+    opacity: 0;
+    background-color: #fe0000;
+    color: #fff !important;
+    padding: 15px 17px;
+    transition: all 250ms ease-in;
+}
+
+.back_to_top .fa-angle-up {
+    font-size: 20px;
+}
+
+.img-container img {
+    max-width: 250px;
+    display: block;
+    margin-left: 80px;
+}
+
+.contact-details-header .email .img-border,
+.contact-details-header .call .img-border {
+    /* background-image: url('../uploads/Rectangle-3.png'); */
+    padding: 5px;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+}
+.img-border img{
+    width: 75px;
+}
+.contact-details-header a {
+    transition: all 250ms ease-in;
+}
+
+.contact-details-header a:hover {
+    color: #9e3546;
+    text-decoration: none;
+}
+
+.call h4,
+.email h4 {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 200;
+    font-size: 13px;
+    margin-bottom: 3px;
+}
+.call{
+    transform: translateY(3px);
+}
+.call p,
+.email p,
+.call a,
+.email a {
+    font-family: 'Poppins', sans-serif;
+    font-size: 13px;
+    font-weight: 700;
+    margin-bottom: 0;
+    color: #000;
+}
+
+.navbar-collapse {
+    position: relative;
+}
+
+.navbar-nav {
+    background-color: #000;
+    width: calc(84% + 2px);
+    position: absolute;
+    z-index: 99;
+    top: -4px;
+    right:0;
+}
+.navbar-brand{
+    pointer-events: none;
+}
+.navbar-nav a {
+    display: inline-block;
+    font-size: 13px;
+    font-family: 'Poppins', sans-serif;
+    color: #fff;
+    font-weight: 300;
+    transition: all 250ms ease-in;
+    padding: 8px 40px !important;
+    text-transform: uppercase;
+}
+
+.navbar-nav a.active {
+    background-color: #fe0000;
+}
+
+.navbar-nav a:hover {
+    background-color: #fe0000;
+    text-decoration: none;
+}
+
+.navbar-nav li {
+ 
+    margin-right: 33px;
+}
+.navbar-nav li:last-child{
+    margin-left: 0px;
+}
+
+/*------------------------------Carousel CSS Start------------------------------ */
+
+.section-01 button{
+
+   visibility: hidden;
+}
+.carousel-caption{
+    bottom: 130px;
+    
+}
+.carousel-caption h2{
+    font-family: 'Oswald', sans-serif; 
+    text-shadow: 0.05em 0.05em 0.1em black;
+    /* padding:0 5em; */
+    font-size:40px;
+    letter-spacing: 1px;
+}
+/* ------------------------------Carousel CSS end------------------------------ */
+
+
+/*-------------------------- Section 02 Css start here -----------------  */
+.section-02{
+    background-color: #f3f3f3;
+    padding-top:48px;
+}
+.section-02 .card{
+    max-width:350px;
+    margin:32px auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: none;
+    background-color: transparent;
+}
+.card img{
+    width:100%;
+}
+.card h5{
+    background-color:#fe0000;
+    font-family:'Rajdhani', sans-serif;
+    color:#fff;
+    font-size:24px;
+    font-weight: 500;
+    padding:8px  32px;
+    position: relative;
+    top:-16px;
+    border-radius:4px;
+    min-width:250px;
+    text-align: center;
+    transition: all 250ms ease-in;
+    /* pointer-events: none; */
+}
+.card h5:hover{
+    transform: translateY(-2px);
+    text-decoration: none;
+}
+/*-------------------------- Section 02 Css end here-------------------- */
+
+/* --------------------------Section 03 Css Start ----------------------- */
+.section-03{
+    padding:48px 16px;
+}
+.section-03 h1{
+    text-align: center;
+    color: #fe0000;
+    font-family: 'Nunito Sans', sans-serif;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size:56px;
+    padding:0 32px;
+    line-height:1.4;
+    margin-bottom:10px;
+}
+.section-03 p{
+    text-align: center;
+    font-family: 'Rajdhani',sans-serif;
+    font-size:24px;
+    padding: 0px 215px;
+    opacity:0.9;
+
+}
+/* --------------------------Section 03 Css end -------------------------- */
+
+
+/* --------------------------Section 04 Css Start ------------------------ */
+
+.section-04-b{
+    background-image: url('../uploads/Layer-123.png');
+    background-size: cover;
+    display:flex;
+    align-items: center;
+}
+.section-04-a{
+    overflow: hidden;
+}
+.section-04-b h3{
+    color: #fff;
+    font-family: 'Poppins',sans-serif;
+    line-height:2;
+    font-size:15px;
+    padding:0 50px;
+    overflow: hidden;
+    font-weight: 300;
+}
+
+.section-05{
+    padding-top: 48px;
+}
+.section-05 .section-05-a h2{
+    text-align: center;
+    font-family: 'Rajdhani',sans-serif;
+    color: #fe0000;
+    font-weight:800;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+    font-size:34px;
+}
+.section-05 .section-05-a p{
+    text-align: center;
+    font-family: 'Rajdhani',sans-serif;
+    color:#3a3a3c;
+    font-size:24px;
+    /* max-width: 500px; */
+    padding:0 172px;
+    margin-bottom:45px;
+}
+/* --------------------------Section 04 Css End   -------------------------*/
+
+/* --------------------------Section 05 Css Start   -------------------------*/
+.section-05 .card{
+    border:0;
+    overflow: hidden;
+}
+.section-05 .card h3{
+    text-align: center;
+    background-color: #fe0000;
+    margin-top:5px;
+    color:#fff;
+    font-family: 'Rajdhani',sans-serif;
+    font-size:24px;
+    padding:6px 0;
+}
+.section-05 .card img{
+    transition: all 250ms ease-in;
+    overflow: hidden;
+}
+.section-05 .card:hover img{
+    transform: scale(1.05);
+    cursor: pointer;
+
+}
+.btn-more{
+    background-color: #000;
+    color: #fff;
+    border-radius:0;
+    font-family: 'Rajdhani',sans-serif;
+    font-weight:600;
+    padding:5px 40px;
+    transition: all 250ms ease-in;
+
+}
+.btn-more:hover{
+    transform: translateX(2px);
+    color: #fff;
+    background-color: #fe0000;
+}
+/* --------------------------Section 05 Css End   -------------------------*/
+
+
+/* --------------------------Section 06 Css Start  ------------------------ */
+
+.section-06{
+    padding-top:48px;
+}
+.section-06 h3{
+    font-family: 'Rajdhani',sans-serif;
+    color: #fe0000;
+    font-weight:700;
+    font-size:35px;
+    text-transform: uppercase;
+    margin-bottom:17px;
+    letter-spacing: 1px;
+}
+
+.section-06 p{
+    font-family: 'Poppins',sans-serif;
+    line-height:2.4;
+    font-size:14px;
+    color: #2d2d2d;
+    margin-bottom: 0;
+    padding: 0 21px 0 0;
+}
+.section-06 p a{
+
+    color: #2d2d2d;
+    transition: all 250ms ease-in;
+    border-bottom: 1px solid #2d2d2d;
+    
+}
+.section-06 p a:hover{
+    color: #fe0000;
+    border-bottom-color: transparent;
+    text-decoration: none;
+}
+/* --------------------------Section 06 Css Start  ------------------------ */
+
+
+/* --------------------------Section 07 Css here  -------------------------- */
+.section-07-gallery{
+   background-image: url('../uploads/Layer-4341-copy-5.jpg');
+   background-repeat: no-repeat; 
+   background-size: contain;
+   padding-top:80px;
+   margin-top:60px;
+   margin-bottom:80px;
+}
+.section-07-gallery h2{
+    text-align: center;
+    font-family: 'Rajdhani',sans-serif;
+    color: #fff;
+    text-transform: uppercase;
+    font-weight: 800;
+    
+    
+}
+.gallery-wrapper{
+    margin-top:71px;
+    display:flex;
+    padding:0 32px;
+    margin-bottom:60px;
+}
+
+.col-one ,.col-two{
+    width:49%;
+}
+.col-one{
+    margin-right:10px;
+}
+.col-two{
+
+    margin-left:16px;
+}
+.col-one a,.col-two b{
+    width:100%;
+}
+.col-1-a{
+    margin-bottom:24px;
+}
+.col-2-a{
+    margin-bottom: 27px;
+}
+.col-1-a a:first-child, .col-2-b a:first-child{
+    margin-right:18px;
+}
+.col-1-a a:last-child ,.col-2-b a:last-child{
+    margin-left:9px;
+}
+.col-one img,.col-two img{
+   width: 100%;
+}
+.col-1-a,.col-2-b{
+    display:flex;
+}
+/* --------------------------Section 07 Css end ---------------------------- */
+
+/* --------------------------Footer css Start   ---------------------------- */
+.footer-1{
+    background-image: url('../uploads/Layer-1225.jpg');
+    background-repeat: no-repeat;
+    padding-top:272px;
+    background-size: contain;
+    background-color: #000;
+}
+.footer-1 .details-row{
+    background-color:#000;
+    padding-top:32px;
+}
+.footer-1 .details img{
+    height:60px;
+}
+.footer-1 .details h3{
+    color: #fff;
+    text-transform: uppercase;
+    font-family: 'Poppins',sans-serif;
+    font-size:18px;
+    margin-top:16px;
+    font-weight: 500;
+
+}
+.footer-1 .details p,.footer-1 .details p a{
+    color: #fff;
+    font-family: 'Poppins',sans-serif;
+    font-size:14px;
+    line-height:1.7;
+    transition: all 250ms ease-in;
+}
+.footer-1 .details a:hover{
+    color: #fe0000;
+    text-decoration: none;
+}
+.footer-2{
+    background-color: #000;
+    text-align: center;
+    padding-top:48px;
+    padding-bottom:16px;
+}
+.footer-2 p,.footer-2 p a{
+    margin-bottom:0;
+    color:#fff;
+    font-family: 'Poppins',sans-serif;
+    font-weight: 300;
+    transition: all 250ms ease-in;
+}
+.privacy-link:hover{
+    color: #fe0000;
+    text-decoration: none;
+}
+/*----------------------------------------- Footer Css end --------------------------- */
+
+
+/* ------------------------Responsive Media Queris Start -----------------------------*/
+
+
+
+/* Custom Media Query to fix the margin breaking between this two widths */
+
+@media (min-width: 1200px) and (max-width: 1260px) {
+    .navbar-nav li:last-child {
+        margin-left: 0px;
+      }
+      .navbar-nav a{
+        padding: 10px 20px !important;
+      }
+} 
+
+/* Landscape */
+
+@media (min-width: 992px) and (max-width: 1199px){
+    .navbar-nav{
+        width:95%;
+    }
+    .navbar-nav li {
+        margin-right: 29px;
+    }
+    .navbar-nav li:last-child{
+        margin-left: 0 !important;
+    }
+    .navbar-nav a{
+        padding: 10px 30px !important;
+    }
+    .carousel-caption{
+        bottom:10px;
+    }
+    .img-container img{
+        margin-left: 32px;
+    }
+    .carousel-caption h2{
+        font-size: 34px;
+    }
+    .section-03 h1{
+        font-size: 56px;
+        padding: 0 16px;
+    }
+    .call{
+        transform: translateY(0px);
+    }
+    .section-03 p{
+        font-size:24px;
+    }
+    .section-04 img{
+        height:100%;
+    }
+    .section-04 h3{
+        padding:16px;
+    }
+    .col-1-a {
+        margin-bottom: 25px;
+      }
+}
+
+/*Portrait*/
+
+@media (min-width: 768px) and (max-width: 991px) {
+    .img-container img{
+        margin-left: 0;
+        max-width:200px;
+    }
+    .navbar-nav{
+        justify-content: center;
+        width:150%;
+        top:6px;
+    }
+    .navbar-nav li:last-child{
+        margin-left: 0 !important;
+    }
+    .contact-details-header{
+        margin-bottom:2px;
+    }
+    .carousel-caption{
+        bottom:32px;
+    }
+    .call{
+        transform: translateY(2px);
+    }
+    .carousel-caption h2{
+        font-size: 25px;
+    }
+    .section-03 h1 {
+        font-size: 40px;
+        padding: 0 16px;
+  
+    }
+    
+   .section-06 h3{
+    margin-bottom:8px;
+   }
+    .section-03 p{
+        padding: 0 16px;
+    }
+    .section-04 img{
+        height:100%;
+    }
+    .col-1-a {
+        margin-bottom: 24px;
+      }
+    .section-04-b h3 {
+
+        font-size: 14px;
+        padding: 48px 16px;
+
+    }
+    .section-05 .section-05-a p {
+        text-align: center;
+        font-family: 'Rajdhani',sans-serif;
+        color: #3a3a3c;
+        font-size: 24px;
+        padding: 0 16px;
+        margin-bottom: 32px;
+    }
+    .section-05 .card h3 {
+
+        font-size: 17px;
+
+      }
+      .lightbox {
+        top: 50%;
+        left: 50%;
+        transform: translate( 0%, 100% );
+    }
+    .section-06 h3{
+        font-size: 29px;
+    }
+    .section-06 img{
+        height:85%;
+    }
+    
+}
+
+/*android*/
+
+@media screen and (max-width: 767px) {
+    header{
+        padding:16px 0 0 0;
+    }
+    .navbar-nav li:last-child{
+        margin-left: 0 !important;
+    }
+    .email,.call{
+        max-width: 240px;
+        margin:auto;
+        width: 100%;
+    }
+    .call{
+        transform: translateY(0px);
+    }
+    .contact-details-header{
+        flex-direction: column;
+    }
+    .contact-details-header .email .img-border, .contact-details-header .call .img-border {
+        padding: 0;
+    }
+    .navbar-nav {
+        position: static;
+        width:100%;
+        padding:0 16px;
+    }
+    .navbar-nav a{
+        width:100%;
+        padding:11px 16px !important;
+    }
+    .navbar-nav li{
+        margin-right: 0 !important;
+        margin-bottom:3px;
+    }
+    .navbar-brand{
+        font-family: 'Poppins',sans-serif;
+        color: #fff;
+        margin-left:16px;
+    }
+    .navbar-toggler {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .navbar-toggler-icon {
+        width: 24px;
+        height: 3px;
+        background: #fff;
+        margin-top: 3px;
+    }
+    .navbar-toggler-icon:first-child{
+        margin-top: 0;
+    }
+    .navbar{
+        background-color: #000;
+    }
+    .img-container img{
+        margin-left:0;
+    }
+    .img-container{
+        margin:0 auto;
+    }
+    .section-02{
+        padding-top: 0;
+    }
+    .section-03 h1{
+        font-size: 28px;
+        padding:0;
+        margin-bottom: 10px;
+    }
+    .section-03 p{
+        font-size:22px;
+        padding:0;
+    }
+
+    .section-04-b h3 {
+
+        padding: 32px 16px;
+   
+    }
+    .card{
+        max-width:600px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .section-05 .section-05-a p {
+
+        padding: 0 16px;
+       font-size:21px;
+      }
+
+      .section-06 h3 {
+        text-transform: uppercase;
+        margin-bottom: 8px;
+        text-align: center;
+      }
+      .section-06 p{
+        margin-bottom:32px;
+        padding: 0 21px 0 27px;
+      }
+
+      .section-07-gallery{
+        padding-top:32px;
+      }
+
+      .gallery-wrapper{
+        flex-direction: column;
+        margin-top: 48px;
+      }
+
+      .col-one,.col-two{
+        width:100%;
+        margin-left: 0;
+      }
+      .col-2-b{
+        flex-direction: column;
+    
+      }
+      .col-1-a{
+        margin-bottom: 16px;
+        flex-direction: column;
+      }
+      .col-1-a a:first-child, .col-2-b a:first-child {
+        margin-right: 0;
+        margin-bottom: 16px;
+      }
+      .col-1-a a:last-child, .col-2-b a:last-child {
+        margin-left: 0em;
+        margin-bottom: 16px;
+      }
+      .col-two-b{
+        margin-bottom:16px;
+      }
+      .footer-1 {
+        padding:60px 32px 16px 32px;
+      }
+
+      .details{
+        margin-bottom: 16px;
+      }
+
+
+
+}
+
+/* IOS */
+
+@media screen and (max-width: 340px) {
+    .section-03 {
+        padding:32px 0;
+    }
+    .section-03 h1{
+        font-size: 24px;
+    }
+    .section-03 p{
+        font-size: 17px;
+    }
+    .section-05 .section-05-a p {
+        padding: 0 ;
+        font-size: 17px;
+      }
+}
+
+/*  IE10+ */
+@media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+   .card img{
+    height:100%;
+   }
+}
+
+
+/* / 1280 resolution / */
+@media (min-width: 1280px) and (max-width: 1365px) {
+}
+
+/* 1440  900 resolution */ 
+@media (min-width: 1440px) and (max-width: 1445px) {}
+
+/*Large View*/
+@media (min-width: 1600px) {
+    .img-container img {
+        max-width: 300px;
+    }      
+    .section-02 .card{
+        max-width: 600px; 
+    }
+    
+    .section-05 .card h3{
+        font-size: 30px;
+    }
+    .section-05 .section-05-a h2,.section-07-gallery h2{
+        font-size: 60px;
+    }
+    .section-05 .section-05-a p {
+        font-size: 32px;      
+        padding: 0 146px;
+
+    }
+    .carousel-caption h2{
+        font-size: 53px;
+    }
+    .section-04-b h3{
+        font-size: 20px;
+    }
+    .img-border img{
+        width: 120px;
+    }
+    .navbar-nav a{
+        font-size: 17px;
+    }
+    .section-06 h3{
+        font-size: 46px;
+    }
+    .section-06 p {
+      font-size: 17px;
+    }
+    .col-1-a{
+      margin-bottom: 22px;
+    }
+}
+
+
+
+
+  
+
