@@ -1,0 +1,64 @@
+@import 'reset.scss';
+@import 'mixin.scss';
+
+.header{
+    background-color: $greenBlue;
+    padding-left: 0;
+    padding-right: 2em;
+    border-bottom: 4px solid $red;
+
+    .logo-container img{
+       width:75px;
+    }
+    
+    .navbar{
+       height: 100%;
+    }
+    .navbar-nav{
+        // border: 1px solid red;
+        width: 100%;
+        justify-content: flex-end;
+        gap:2.5em;
+        a{
+            font-size: 1.4rem;
+            font-family: $navFont;
+            color: #fff;
+        }
+    }
+}
+
+.section-1{
+    padding: 1em 2em 4em 2em;
+    .sec-1-col-a{
+        padding-top: 9em;
+    }
+    .sec-1-col-b{
+        padding-top: 4em;
+    }
+    h1{
+        font-family: $headingFont;
+        font-weight: 600;
+        font-size: 4rem;
+        margin-bottom: 0.3em;
+        letter-spacing: 1px;
+        .red{
+            color: $red;
+        }
+        .green{
+            color: $greenBlue;
+        }
+    }
+    p{
+        font-family:$paraFont;
+        font-size: 1.1rem;
+        margin-bottom: 2em;
+    }
+    .btn-container{
+        display: flex;
+        gap: 1.5em;
+    }
+    
+    .btn-custom{
+       @include customBtn;
+    }
+}

@@ -4,15 +4,127 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords" content="Web Development, Fullstack Developer, Mern Stack" />
+    <meta name="description"
+    content="Fullstack Software Developer that is curious of learning new technologies and building creative and amazing web apps" />
     <title>Yehan | Portfolio</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
-    <link rel="icon"  type="favicon" href="icons/logo-icon.png">
-    <link rel="stylesheet" type="text/css" href="css/style.css">
+    
+    <link rel="stylesheet" href="resources/css/bootstrap.min.css">
+    <link rel="stylesheet" href="resources/css/aos.css">
+    <link rel="stylesheet" href="resources/css/slick.css">
+    <link rel="stylesheet" href="resources/css/slick-theme.css">
+    <link href="resources/css/hover.css" rel="stylesheet" media="all">
+    <link rel="stylesheet" href="resources/css/all.min.css">
+    <link rel="stylesheet" href="resources/css/style.css">
+  
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;500&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600&family=Rajdhani:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+  
+    <script src="resources/js/jquery.min.js"></script>
+    <script src="resources/js/bootstrap.bundle.min.js"></script>
+
 </head>
 <body>
-   <h1>Comming Soon</h1>
+   <div class="container-fluid header fixed-top">
+     <div class="row overflow-hidden">
+        <div class="col-md-4 logo-container">
+          <a href="">
+            <img src="resources/imgs/logo.png" alt="Logo" data-aos="fade-up" data-aos-duration="1500">
+          </a>
+        </div>
+        <div class="col-md-8 header-sec-b" data-aos="fade-left" data-aos-duration="2000">
+            <nav class="navbar navbar-expand-md p-0">
+                <a class="navbar-brand d-block d-md-none" href="#">Menu</a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+                  aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                  <span class="navbar-toggler-icon"></span>
+                  <span class="navbar-toggler-icon"></span>
+                  <span class="navbar-toggler-icon"></span>
+                </button>
+      
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                  <ul class="navbar-nav">
+                
+                    <li class="">
+                      <a class="" href="#">About</a>
+                    </li>
+                    <li class="">
+                      <a class="" href="#">Projects</a>
+                    </li>
+                    <li class="">
+                      <a class="active" href="#">Skills</a>
+                    </li>
+                    <li class="">
+                        <a class="" href="#">Contact</a>
+                      </li>
+      
+                  </ul>
+                </div>
+              </nav>
+        </div>
+     </div>
+   </div>
+
+   <div class="container-fluid section-1">
+     <div class="row">
+      <div class="col-md-6 sec-1-col-a">
+          <h1>Hello i am Yeh<span class="red">a</span><span class="green">n</span></h1>
+          <p data-aos="fade-right" data-aos-duration="2500">Full Stack Web Developer that is interested in machine learning
+            Loves Learning new technologies and applying them in projects.</p>
+          <div class="btn-container mt-4" data-aos="fade-up" data-aos-duration="3000">
+            <a href="" class="hvr-pulse-grow btn-custom">
+              View Resume
+            </a>
+            <a href="" class="hvr-pulse-grow btn-custom">
+              View Projects
+            </a>
+          </div>
+      </div>
+      <div class="col-md-6 sec-1-col-b">
+         <img src="resources/imgs/web.gif" alt="Web">
+      </div>
+     </div>
+   </div>
+
+   <script src="resources/js/aos.js"></script>
+   <script src="resources/js/slick.js"></script>
+   <script src="resources/js/all.min.js"></script>
+   <script src="resources/js/jarallax.min.js"></script>
+   <script src="resources/js/jquery.cookieMessage.min.js"></script>
+   <script src="resources/js/loader.js"></script>
+
+   <script>
+    $(document).ready(function () {
+ 
+      AOS.init();
+      setTimeout(function () { AOS.init(); }, 300);
+
+      if ($('#back-to-top').length) {
+        var scrollTrigger = 100, // px
+          backToTop = function () {
+            var scrollTop = $(window).scrollTop();
+            if (scrollTop > scrollTrigger) {
+              $('#back-to-top').addClass('show');
+            } else {
+              $('#back-to-top').removeClass('show');
+            }
+          };
+        backToTop();
+        $(window).on("scroll", function () {
+          backToTop();
+        });
+        $('#back-to-top').on("click", function (e) {
+          e.preventDefault();
+          $('html,body').animate({
+            scrollTop: 0
+          }, 700);
+        });
+      }
+
+
+
+    })
+
+  </script>
 </body>
 </html>

@@ -1,0 +1,15 @@
+@mixin  customBtn {
+      background-color: $greenBlue;
+      display: inline-block;
+      border-radius: 0.5em;
+      color: #fff;
+      font-family: $paraFont;
+      padding: 0.7em 1.5em;
+      font-size: 1.1rem;
+      outline: 2px solid $greenBlue;
+      transition: all 250ms ease-in;
+      &:hover{
+        outline: 2px solid $red;
+        text-decoration: none;
+      }
+}
