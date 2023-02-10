@@ -9,12 +9,12 @@
     content="Fullstack Software Developer that is curious of learning new technologies and building creative and amazing web apps" />
     <title>Yehan | Portfolio</title>
     
+    <link rel='shortcut icon' type='image/x-icon' href='resources/imgs/y.ico' />
     <link rel="stylesheet" href="resources/css/bootstrap.min.css">
     <link rel="stylesheet" href="resources/css/aos.css">
-    <link rel="stylesheet" href="resources/css/slick.css">
-    <link rel="stylesheet" href="resources/css/slick-theme.css">
     <link href="resources/css/hover.css" rel="stylesheet" media="all">
     <link rel="stylesheet" href="resources/css/all.min.css">
+    <link rel="stylesheet" href="resources/css/kursor.css">
     <link rel="stylesheet" href="resources/css/style.css">
   
     <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;500&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600&family=Rajdhani:wght@300;400;500;600;700&display=swap" rel="stylesheet">
@@ -24,12 +24,21 @@
     <script src="resources/js/bootstrap.bundle.min.js"></script>
 
 </head>
-<body>
+<body data-spy="scroll" data-target=".navbar" data-offset="100" data-spy="affix">
+  <a href="javascript:void(0);" id="back-to-top" class="background-btn back_to_top show" title="Go to top">
+    <i class="fas fa-angle-up" aria-hidden="true"></i>
+  </a>
+
+  <div class="loader">
+    <div id="loaderImage"></div>
+  </div>
+
+
    <div class="container-fluid header fixed-top">
      <div class="row overflow-hidden">
-        <div class="col-md-4 logo-container">
-          <a href="">
-            <img src="resources/imgs/logo.png" alt="Logo" data-aos="fade-up" data-aos-duration="1500">
+        <div class="col-md-4  logo-container">
+          <a href="#">
+            <img src="resources/imgs/logo.png" alt="Logo" data-aos="fade-up" data-aos-duration="2000" >
           </a>
         </div>
         <div class="col-md-8 header-sec-b" data-aos="fade-left" data-aos-duration="2000">
@@ -46,59 +55,458 @@
                   <ul class="navbar-nav">
                 
                     <li class="">
-                      <a class="" href="#">About</a>
+                      <a class="nav-link" href="#about">About</a>
                     </li>
                     <li class="">
-                      <a class="" href="#">Projects</a>
+                      <a class="nav-link" href="#projects">Projects</a>
                     </li>
                     <li class="">
-                      <a class="active" href="#">Skills</a>
+                      <a class="nav-link" href="#skills">Skills</a>
                     </li>
                     <li class="">
-                        <a class="" href="#">Contact</a>
+                        <a class="nav-link" href="#contact">Contact</a>
                       </li>
       
                   </ul>
                 </div>
               </nav>
+
+        
+
         </div>
      </div>
    </div>
 
-   <div class="container-fluid section-1">
+   <div class="container-fluid section-1" >
      <div class="row">
       <div class="col-md-6 sec-1-col-a">
-          <h1>Hello i am Yeh<span class="red">a</span><span class="green">n</span></h1>
+          <!-- <h1>Hello i am Yeh<span class="red">a</span><span class="green">n</span></h1> -->
+          <div class="d-flex"><h1></h1><span class="hide">H</span></div>
           <p data-aos="fade-right" data-aos-duration="2500">Full Stack Web Developer that is interested in machine learning
             Loves Learning new technologies and applying them in projects.</p>
+            <ul data-aos="fade-right" data-aos-duration="2500" class="social-media">
+              <li><a title="Click to visit" href="https://github.com/Yehan20" target="_blank"><i class="fab fa-github"></i></a></li>
+              <li><a title="Click to visit" href="https://www.linkedin.com/in/yehan-nilanga-552b87161/" target="_blank"><i class="fab fa-linkedin"></i></a></li>
+     
+          </ul>
           <div class="btn-container mt-4" data-aos="fade-up" data-aos-duration="3000">
-            <a href="" class="hvr-pulse-grow btn-custom">
+            <a href="assests/Resume.pdf" target="_blank" title="Click to view" class="hvr-pulse-grow btn-custom">
               View Resume
             </a>
-            <a href="" class="hvr-pulse-grow btn-custom">
+            <a href="#projects" class="hvr-pulse-grow btn-custom">
               View Projects
             </a>
           </div>
+          <!-- smd -->
+    
       </div>
+
       <div class="col-md-6 sec-1-col-b">
-         <img src="resources/imgs/web.gif" alt="Web">
+         <img src="resources/imgs/web-2.gif" alt="Web">
+      </div>
+
+     </div>
+
+   </div>
+
+   <div class="container-fluid section-2"  id="about" >
+     <h2 data-aos="fade-up" data-aos-duration="2000">About <span class="red">M</span><span class="green">e</span></h2>
+     <div class="grid overflow-hidden">
+      <div class="about-img" data-aos="flip-left" data-aos-duration="2500">
+         <img src="resources/imgs/dark.jpg" alt="Me">
+      </div>
+      <div class="about-content" data-aos="fade-left" data-aos-duration="2000">
+        <p>I am Self taught Web Developer.
+          My love for web development started in 2021. Since then I have been self studying about different technologies and making projects using those concepts , I feel really happy when designing responsive and attractive websites, I like to write clean and reusable code that can be understood by others
+        </p>
+        
+        <p>As a person i am a friendly easy going guy who likes to make new friends , and help others, I try to be positive and learn from my mistakes,For me learning new technologies and applying them and making new things is very satisfying. I have completed my Higher diploma and degree in Software engineering. I am excited to work with and learn from the experts in the industry, and continue to grow myself as a developer.  </p>
+
+      
+      </div>
+      <div class="banner-heading" >
+        <h3 data-aos="fade-right" data-aos-duration="1500">I love Learning new Things</h3>
+      </div>
+     </div>
+   </div>
+ 
+   <div class="container-fluid section-3" id="projects">
+    <h2 data-aos="fade-up" data-aos-duration="2000">Projec<span class="red">t</span><span class="green">s</span></h2>
+    <div class="row m-0">
+       <div class="col-md-12 project" data-aos="fade-up" data-aos-duration="2500">
+         <div class="project-img">
+            <img src="resources/imgs/cc-3.png" alt="Carcity">
+         </div>
+         <div class="project-content">
+            <h3>Car City</h3>
+            <p>Fake Shopping cart for Toy cars Which allows users to view items , add them to a cart , remove items from a cart , search items and then check out. dynamic cart that reacts to any change in the cart items.</p>
+            <ul>
+              <h3>Technologies Used</h3>
+              <li>React </li>
+              <li>Node Js</li>
+              <li>Express</li>
+              <li>Mongo Db</li>
+              <li>Styled Components</li>
+              <li>Bootstrap</li>
+            </ul>
+            <div class="btn-container">
+              <a href="https://yn-carcity.netlify.app/" target="_blank" title="Click to visit" class="hvr-pulse-grow btn-custom">
+                Live Website
+              </a>
+              <a href="https://github.com/Yehan20/Car-City" target="_blank" title="Click to visit" class="hvr-pulse-grow btn-custom">
+                Github Repo
+              </a>
+            </div>
+         </div>
+       </div>
+
+       <div class="col-md-12 project" data-aos="fade-up" data-aos-duration="2500">
+        <div class="project-img">
+           <img src="resources/imgs/notes.png" alt="Notes">
+        </div>
+        <div class="project-content">
+           <h3>Notes</h3>
+           <p>
+            Mini web application where you can plan your daily tasks ,
+             you can create a new Note list with different tasks and complete these tasks once you finish them. You can get a summary of your Tasks as well 
+          </p>
+           <ul>
+             <h3>Technologies Used</h3>
+             <li>React </li>
+             <li>Firebase</li>
+             <li>Styled Components</li>
+             <li>Bootstrap</li>
+           </ul>
+           <div class="btn-container">
+             <a href="https://notes2-0.netlify.app/" target="_blank" title="Click to visit" class="hvr-pulse-grow btn-custom">
+               Live Website
+             </a>
+             <a href="https://github.com/Yehan20/Notes" target="_blank" title="Click to visit" class="hvr-pulse-grow btn-custom">
+               Github Repo
+             </a>
+           </div>
+        </div>
+      </div>
+
+      <div class="col-md-12 project" data-aos="fade-up" data-aos-duration="2500">
+        <div class="project-img">
+           <img src="resources/imgs/sms-2.png" alt="SMS">
+        </div>
+        <div class="project-content">
+           <h3>Smart Food Ordering System</h3>
+           <p>
+            Food ordering system that will predict the time taken for a meal to be ready. users can order different food items. and view food items and view their ordered items.
+          </p>
+           <ul>
+             <h3>Technologies Used</h3>
+             <li>React </li>
+             <li>Node js</li>
+             <li>Python / Flask</li>
+             <li>Express</li>
+             <li>Mysql</li>
+             <li>Bootstrap</li>
+           </ul>
+           <div class="btn-container">
+             <a href="https://food-labs-sos.netlify.app/" title="Click to visit"  target="_blank" class="hvr-pulse-grow btn-custom">
+               Live Website
+             </a>
+             <a href="https://github.com/Yehan20/Food_Preperation_Time_Prediction_system" title="Click to visit" target="_blank" class="hvr-pulse-grow btn-custom">
+               Github Repo
+             </a>
+           </div>
+        </div>
+      </div>
+
+      <div class="col-md-12 project" data-aos="fade-up" data-aos-duration="2500">
+        <div class="project-img">
+           <img src="resources/imgs/hp2.png" alt="Harry Potter House">
+        </div>
+        <div class="project-content">
+           <h3>Harry Potter House Finder</h3>
+           <p>
+            This application will assign you your harry potter house , depending on how you answer the questions , check it out !!
+            Your answers will depend on the house you will be assigned.
+          </p>
+           <ul>
+             <h3>Technologies Used</h3>
+             <li>React </li>
+             <li>Styled Components</li>
+           </ul>
+           <div class="btn-container">
+             <a href="https://harrypotter-house-finder.netlify.app/" target="_blank" title="Click to visit"  class="hvr-pulse-grow btn-custom">
+               Live Website
+             </a>
+             <a href="https://github.com/Yehan20/Harry-potter-House-finder" target="_blank" title="Click to visit" class="hvr-pulse-grow btn-custom">
+               Github Repo
+             </a>
+           </div>
+        </div>
+      </div>
+
+      <div class="col-md-12 project" data-aos="fade-up" data-aos-duration="2500">
+        <div class="project-img">
+           <img src="resources/imgs/g-finder.png" alt="SMS">
+        </div>
+        <div class="project-content">
+           <h3>Git Hub Searcher</h3>
+           <p>
+           My First React project. This is a mini app where users can Search Github user profiles. Uses the github api to fetch the data
+          </p>
+           <ul>
+             <h3>Technologies Used</h3>
+             <li>React </li>
+             <li>Tailwind Css</li>
+           </ul>
+           <div class="btn-container">
+             <a href="https://yn-git-hub-searcher.netlify.app/" title="Click to visit" target="_blank" class="hvr-pulse-grow btn-custom">
+               Live Website
+             </a>
+             <a href="https://github.com/Yehan20/Git-Hub-Finder" title="Click to visit" target="_blank" class="hvr-pulse-grow btn-custom">
+               Github Repo
+             </a>
+           </div>
+        </div>
+      </div>
+
+      <div class="col-md-12 project" data-aos="fade-up" data-aos-duration="2500">
+        <div class="project-img">
+           <img src="resources/imgs/manage.png" alt="SMS">
+        </div>
+        <div class="project-content">
+           <h3>Manage Landing Page</h3>
+           <p>
+            This project is from a challenge by Frontend Mentor. Normal Landing Page responsive for all devices , page consists of handful of sections
+            and a slider
+          </p>
+           <ul>
+             <h3>Technologies Used</h3>
+             <li>Html </li>
+             <li>Css</li>
+             <li>Jquery / JS</li>
+           </ul>
+           <div class="btn-container">
+             <a href="https://yn-manage-landing-page.netlify.app/" title="Click to visit" target="_blank" class="hvr-pulse-grow btn-custom">
+               Live Website
+             </a>
+             <a href="https://github.com/Yehan20/Front-End-Mentor-Solutions/tree/main/manage-landing-page-master" title="Click to visit" target="_blank" class="hvr-pulse-grow btn-custom">
+               Github Repo
+             </a>
+           </div>
+        </div>
+      </div>
+
+    </div>
+   </div>
+
+   <div class="container-fluid section-4" id="skills">
+     <h2>Skil<span class="red">l</span><span class="green">s</span></h2>
+     <div class="row">
+      <div class="col-md-12 skills">
+          <div class="skill" data-aos="fade-up" data-aos-duration="2000">
+             <img src="resources/logos/html-5.svg" alt="Skill">
+             <h5>HTML</h5>
+          </div>
+          <div class="skill" data-aos="fade-up" data-aos-duration="1500">
+            <img src="resources/logos/css.svg" alt="Skill">
+            <h5>CSS</h5>
+         </div>
+         <div class="skill" data-aos="fade-up" data-aos-duration="2500">
+          <img src="resources/logos/scss-svgrepo-com.svg" alt="Skill">
+          <h5>SCSS</h5>
+          </div>
+
+          <div class="skill" data-aos="fade-up" data-aos-duration="3000">
+            <img src="resources/logos/bootstrap.svg" alt="Skill">
+            <h5>Bootstrap</h5>
+            </div>
+
+         <div class="skill" data-aos="fade-up" data-aos-duration="2500">
+          <img src="resources/logos/javascript-svgrepo-com.svg" alt="Skill">
+          <h5>Javascript</h5>
+         </div>
+
+         <div class="skill" data-aos="fade-up" data-aos-duration="1500">
+          <img src="resources/logos/jquery-svgrepo-com.svg" alt="Skill">
+          <h5>Jquery</h5>
+         </div>
+         
+         <!-- break -->
+         
+         <div class="skill" data-aos="fade-up" data-aos-duration="2000">
+          <img src="resources/logos/react-svgrepo-com.svg" alt="Skill">
+          <h5>React</h5>
+         </div>
+
+         <div class="skill" data-aos="fade-up" data-aos-duration="1500">
+          <img src="resources/logos/node-js-svgrepo-com.svg" alt="Skill">
+          <h5>Node Js</h5>
+         </div>
+
+         <div class="skill" data-aos="fade-up" data-aos-duration="2500">
+          <img src="resources/logos/express.svg" alt="Skill">
+          <h5>Express Js</h5>
+         </div>
+
+         <div class="skill" data-aos="fade-up" data-aos-duration="3000">
+          <img src="resources/logos/mongodb-svgrepo-com.svg" alt="Skill">
+          <h5>Mongo Db</h5>
+         </div>
+
+         <div class="skill" data-aos="fade-up" data-aos-duration="2500">
+          <img src="resources/logos/firebase.svg" alt="Skill">
+          <h5>Firebase</h5>
+         </div>
+
+         <div class="skill" data-aos="fade-up" data-aos-duration="1500">
+          <img src="resources/logos/styled-components-svgrepo-com.svg" alt="Skill">
+          <h5>Styled <br> Components</h5>
+         </div>
+
+         <!-- break -->
+
+         <div class="skill" data-aos="fade-up" data-aos-duration="2000">
+          <img src="resources/logos/tailwindcss-icon-svgrepo-com.svg" alt="Skill">
+          <h5>Tailwind</h5>
+         </div>
+
+         
+         <div class="skill" data-aos="fade-up" data-aos-duration="1500">
+          <img src="resources/logos/npm-svgrepo-com.svg" alt="Skill">
+          <h5>NPM</h5>
+         </div>
+
+         <div class="skill" data-aos="fade-up" data-aos-duration="2500">
+          <img src="resources/logos/git-svgrepo-com.svg" alt="Skill">
+          <h5>Git</h5>
+         </div>
+
+         <div class="skill" data-aos="fade-up" data-aos-duration="3000">
+          <img src="resources/logos/mysql-logo-svgrepo-com.svg" alt="Skill">
+          <h5>MySQL</h5>
+         </div>
+
+         
+         <div class="skill" data-aos="fade-up" data-aos-duration="2500">
+          <img src="resources/logos/python-svgrepo-com.svg" alt="Skill">
+          <h5>Python</h5>
+         </div>
+
+         <div class="skill" data-aos="fade-up" data-aos-duration="1500">
+          <img src="resources/logos/php-svgrepo-com.svg" alt="Skill">
+          <h5>Php</h5>
+         </div>
+
+
+
       </div>
      </div>
    </div>
 
+   <div class="container-fluid section-5" id="contact" >
+     <h2 data-aos="fade-up" data-aos-duration="2000">Get in Tou<span class="red">c</span><span class="green">h</span></h2>
+     <div class="row">
+      <div class="col-md-12 sec-5-col-a">
+          <form action="https://formsubmit.co/0c0e16f51e8eeeca15664798b03982be" method="POST" class="" data-aos="fade-up" data-aos-duration="2000">
+            <div class="mb-3">
+                <label for="#name">Name</label>
+                <input type="text" name="name" id="name" placeholder="Your Name" />
+                <div class="err"></div>
+            </div>
+
+            <div class="mb-3">
+                <label for="#email">Email</label>
+                <input type="email" name="email" id="email" placeholder="Email"  />
+                <div class="err"></div>
+            </div>
+            <input type="hidden" name="_next" value="https://yehan-nilanga.netlify.app/pages/success.html">
+            <input type="hidden" name="_template" value="basic">
+            <input type="hidden" name="_captcha" value="false">
+            <input type="hidden" name="_subject" value="new Email" id="">
+
+            <div class="mb-3">
+                <label for="#message">Message</label>
+                <textarea name="message" id="message" style="resize: none;" placeholder="Your Message" cols="30" rows="5"></textarea>
+                <div class="err"></div>
+            </div>
+            <button type="submit" class="send-btn hvr-pulse-grow">Send Message</button>
+
+            <ul class="social-media">
+                <li><a title="Click to mail"  href="mailto:yehansk15@gmail.com" target="_blank"><img src="resources/icons/mail-svgrepo-com.svg" alt="Mail"></a></li>
+                <li><a title="Click to visit" href="https://github.com/Yehan20" target="_blank"><img src="resources/icons/github-svgrepo-com.svg" alt="Github"></a></li>
+                <li><a title="Click to visit" href="https://www.linkedin.com/in/yehan-nilanga-552b87161/" target="_blank">
+                   <img src="resources/icons/linkedin-svgrepo-com.svg" alt="linkedin">
+                </a></li>
+                <li><a title="Click to visit" href="https://www.frontendmentor.io/profile/Yehan20" target="_blank">
+                  <img src="resources/icons/frontendmentor-svgrepo-com.svg" alt="Fem">
+               </a></li>
+            </ul>
+        </form>
+      </div>
+     </div>
+   </div>
+
+   <div class="container-fluid footer">
+      <p>Yehan Nilanga © 2023 | Designed and developed by Yehan With <i class="fas fa-heart"></i> </p>
+   </div>
+
+
+
    <script src="resources/js/aos.js"></script>
-   <script src="resources/js/slick.js"></script>
    <script src="resources/js/all.min.js"></script>
-   <script src="resources/js/jarallax.min.js"></script>
-   <script src="resources/js/jquery.cookieMessage.min.js"></script>
-   <script src="resources/js/loader.js"></script>
+   <script src="resources/js/typed.js"></script>
+   <script src="resources/js/kursor.js"></script>
+   <script defer src="resources/js/app.js"></script>
+   
 
    <script>
     $(document).ready(function () {
- 
+
+      const loader = $('.loader');
+
+      setTimeout(()=>{
+         loader.fadeOut()
+      },500)
+
+      new kursor({
+            type: 5
+        })
+       
+        // Yehan 
+      //  const html = ' Hello i am Yeh<span class="red">a</span><span class="green">n</span>'
+      //  $('h1').html(html) 
+
+       if ($("h1").length == 1) {
+              
+              var typed_strings =`Hello i am Yeh<span class="red">a</span><span class="green">n</span> , Nice to meet y<span class="red">o</span><span class="green">u</span> , This is my Websi<span class="red">t</span><span class="green">e</span>`
+    
+              var typed = new Typed("h1", {
+                  strings:typed_strings.split(', '),
+                  typeSpeed: 100,
+                  loop: true,
+                  fadeOut:true,
+                  loopCount:false,
+                  backDelay: 2000,
+                  backSpeed: 30,
+                  cursorChar: ' ',
+                  callback: function() {},
+                    // starting callback function before each string
+                  preStringTyped: function() {},
+                    //callback for every typed string
+                  onStringTyped: function() {},
+                    // callback for reset
+                  resetCallback: function() {}
+               
+              });
+          }
+
+
+
+      // Aos animate
       AOS.init();
       setTimeout(function () { AOS.init(); }, 300);
+   
 
+      // SCROLL
       if ($('#back-to-top').length) {
         var scrollTrigger = 100, // px
           backToTop = function () {
