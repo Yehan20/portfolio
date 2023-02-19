@@ -624,7 +624,7 @@ ul {
   flex-wrap: wrap;
   column-gap: 1em;
 }
-.section-3 .project-content ul h3 {
+.section-3 .project-content ul .technologies {
   width: 100%;
   margin-bottom: 0.5em;
 }
