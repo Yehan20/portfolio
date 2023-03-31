@@ -507,6 +507,14 @@
             li{
                 font-family: $navFont;
                 font-size: 1.2rem;
+                display: flex;
+                align-items: center;
+                gap: 0.5em;
+                img{
+                  display: inline-block;
+                  width: 20px;
+                  height: 20px;
+                }
             }
         }
         h3{

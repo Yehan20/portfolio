@@ -631,6 +631,14 @@ ul {
 .section-3 .project-content ul li {
   font-family: "Nunito", sans-serif;
   font-size: 1.2rem;
+  display: flex;
+  align-items: center;
+  gap: 0.5em;
+}
+.section-3 .project-content ul li img {
+  display: inline-block;
+  width: 20px;
+  height: 20px;
 }
 .section-3 .project-content h3 {
   font-family: "Rajdhani", sans-serif;
